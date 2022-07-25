@@ -1,0 +1,222 @@
+/* --------------backdrop------------- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: rotate(-290deg);
+}
+
+.modal {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms;
+  transform: translate(-50%, -50%) rotate(0);
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+
+.modal-button {
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.icon-Vector {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  .modal-button:hover &,
+  .modal-button:focus & {
+    fill: #2196f3;
+  }
+  .menu-btn__close:hover &,
+  .menu-btn__close:focus & {
+    fill: #2196f3;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wrap {
+  position: relative;
+}
+
+.input-form {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: #2196f3;
+  }
+  &:focus + .modal-icon-person {
+    fill: #2196f3;
+  }
+}
+
+.modal-icon-person {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-form {
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  resize: none;
+  outline: none;
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: #2196f3;
+  }
+}
+
+.checkbox-policy {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    width: 423px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+  }
+}
+.check-text {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  font-weight: 400;
+  font-size: 12;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.modal-icon-accept {
+  width: 16px;
+  height: 15px;
+  fill: transparent;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 0.2px solid black;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  border: none;
+}
+
+.input-check:checked + .check-text span .modal-icon-accept {
+  fill: #ffffff;
+  border: none;
+}
+
+.policy {
+  margin-left: 21px;
+  line-height: 1.7;
+  text-decoration-line: underline;
+  color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    margin-left: 3px;
+  }
+}
+
+.modal-submit-button {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-button-case {
+  display: flex;
+  justify-content: center;
+}
