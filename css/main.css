@@ -410,16 +410,19 @@ img {
   }
 }
 
+/*
 .contact__item {
-  /*text-align: left;*/
-  /*cursor: pointer;*/
-  /*margin-bottom: 32px;*/
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 32px;
 }
+
 
 .contact__item:last-child {
-  /*margin-bottom: 64px;*/
+  margin-bottom: 64px;
 }
 
+*/
 @media screen and (min-width: 767px) {
   .contact__item {
     margin-bottom: 0;
