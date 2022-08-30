@@ -240,7 +240,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     /*width: 100%;*/
-    -webkit-box-pack: justify;
+    /*-webkit-box-pack: justify;*/
         /*-ms-flex-pack: justify;*/
             /*justify-content: space-between;*/
   }
