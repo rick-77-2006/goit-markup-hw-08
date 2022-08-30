@@ -49,8 +49,8 @@ img {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .container {
@@ -414,7 +414,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-			gap: 32px;
+			gap: 30px;
   }
 }
 
@@ -1365,6 +1365,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+	align-items: baseline;
   }
 }
 
