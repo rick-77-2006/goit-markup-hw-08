@@ -1138,7 +1138,8 @@ img {
   /*overflow: hidden;*/
   position: absolute;
   padding: 24px;
-  
+  padding-top: 77px;
+
   top: 0;
   left: 0;
   background: rgba(33, 150, 243, 0.9);
@@ -1166,18 +1167,19 @@ img {
 }
 
 .overlay__text {
-  font-weight: 400;
+  /*font-weight: 400;*/
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: #ffffff;
   opacity: 0;
+  padding: 24px;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
 }
 
 .list__description {
-  padding: 24px;
+  padding: 20px 24px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #eeeeee;
