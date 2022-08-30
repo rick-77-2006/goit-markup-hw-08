@@ -370,6 +370,8 @@ img {
 @media screen and (min-width: 767px) {
   .contact__list--smartphone {
     display: block;
+		width: 14px;
+	height: 10px;
     margin-right: 10px;
   }
 }
@@ -452,12 +454,14 @@ img {
 
 .contact__item--center {
   text-align: center;
-  margin-bottom: 8px;
+  /*margin-bottom: 8px;*/
 }
 
+/*
 .contact__item--center:last-child {
   margin-bottom: 60px;
 }
+*/
 
 @media screen and (min-width: 1199px) {
   .contact__item--center {
