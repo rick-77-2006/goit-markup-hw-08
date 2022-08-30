@@ -1379,6 +1379,7 @@ img {
 @media screen and (min-width: 1199px) {
   .adress {
     text-align: left;
+		magrin-bottom: 60px;
   }
 }
 
