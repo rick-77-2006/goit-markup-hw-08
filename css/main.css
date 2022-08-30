@@ -420,13 +420,13 @@ img {
   cursor: pointer;
   margin-bottom: 32px;
 }
-
+*/
 
 .contact__item:last-child {
-  margin-bottom: 64px;
+  margin-bottom: 8px;
 }
 
-*/
+
 @media screen and (min-width: 767px) {
   .contact__item {
     margin-bottom: 0;
@@ -1366,6 +1366,7 @@ img {
 
 @media screen and (min-width: 767px) {
   .footer__box {
+  margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
