@@ -126,7 +126,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+	align-items: center
     -webkit-box-pack: justify;
+	margin-left: 93px;
         /*-ms-flex-pack: justify;*/
             /*justify-content: space-between;*/
     /*width: 100%;*/
