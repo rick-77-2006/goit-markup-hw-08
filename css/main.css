@@ -356,6 +356,8 @@ img {
 @media screen and (min-width: 767px) {
   .contact__list--mail {
     display: block;
+	width: 14px;
+	height: 10px;
     margin-right: 10px;
   }
 }
